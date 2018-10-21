@@ -51,6 +51,8 @@ you should receive output like below.
 
 ![correct output](./Pic3.png)
 
+Tips : "make" in Windows is named "mingw32-make". You can go to its path and copy a new one with name "make" if you like. What "make" mentioned below is referred to "mingw32-make".
+
 ### 4. Configure VSCode and do some test.
 
 Open your VSCode and new a folder to make a test.
@@ -130,7 +132,7 @@ and
 ```
 make
 ```
-to generate executable files ```Test.exe```
+to generate executable file ```Test.exe```
 
 Then, in the VSCode, click Debug -> Start Debugging -> C++(GDB/LLDB)
 
@@ -178,7 +180,7 @@ task.json
         {
             "label": "CMAKE",
             "type": "shell",
-            "command": "cmake -D CMAKE_BUILD_TYPE=Debug . -G \"MinGW Makefiles\""
+            "command": "cmake -D CMAKE_BUILD_TYPE=Debug . -G \"MinGW Makefiles\" && make"
         }
     ]
 }
