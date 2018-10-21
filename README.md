@@ -169,7 +169,7 @@ launch.json
 }
 ```
 
-task.json
+tasks.json
 
 ```
 {
