@@ -187,3 +187,4 @@ task.json
 ```
 
 Voilà! VSCode will stop at a breakpoint, showing variable info correctly like below.
+![tester](./Pic4.png)
